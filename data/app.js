@@ -95,6 +95,8 @@ function logout(){
 }
 function isLogin(){
 	if (!window.localStorage.getItem("NombreUser")) {
-		window.location.href = "./"
+		window.location.replace("index.html");
+	} else {
+		window.location.replace("panel.html");
 	}
 }
