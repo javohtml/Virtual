@@ -21,7 +21,7 @@ function loginConductor(r, p) {
 		if (data.status == 'success') {
 			window.localStorage.setItem("numberUser", data.Data[0])
 			window.localStorage.setItem("NombreUser", data.Data[3])
-			window.location.href = './panel.html'
+			window.location.replace('panel.html')
 		} else {
 			bootbox.alert('Nombre de usuario o contraseña incorrectos')
 		}
