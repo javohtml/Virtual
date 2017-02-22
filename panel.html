@@ -60,6 +60,9 @@
                 <div class="row">
                 <br>
                     <div class="col-lg-12">
+                        <div class="alert alert-info" id="message">
+                            Estimado Conductor no tienes solicitudes pendientes de momento.
+                        </div>
                         <div class="table-responsive" id="tablex" style="display: none;">
                                     <table class="table table-striped">
                                         <thead>
@@ -190,6 +193,7 @@
     </script>
     <script type="text/javascript">
         function doTheTable(arr){
+            $("#message").hide()
             console.log(arr.length)
             var html = ''
             for(var i = 0; i < arr.length; i++ ){
